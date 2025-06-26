@@ -20,20 +20,41 @@ export default function About() {
      
     </div>
 
-    <div className="w-full py-10">
-      <h1 className='text-2xl  pb-2 border-b-2 border-red-600'>Bizning institutimiz xalqaro darajadagi hamkorlarimiz.</h1>
-      <div className="w-full grid grid-cols-2 md:grid-cols-3 grid-1 py-4">
-        {aboutData.map(item => (
-        <div key={item.id} className="flex items-center justify-center flex-col pt-4">
-          <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center my-2">
-          <h1 className=''>{item.id}</h1>
+    {/* FAQ Section */}
+ <section className="py-10 my-6 bg-white shadow-md text-black px-3">
+        <div className="max-w-4xl mx-auto space-y-8">
+          <h2 className="md:text-2xl text-lg font-bold text-center text-black">❓ Tez-tez So‘raladigan Savollar</h2>
+          <div className="space-y-4">
+            <details className="border p-4 rounded-lg">
+              <summary className="cursor-pointer font-semibold text-black">❓ Diplom Oliy ta’lim vazirligi tomonidan tan olinadimi?</summary>
+              <p className="mt-2 text-black"> ✅ Bizda xalqaro akkreditatsiya mavjud – diplom O‘zbekistonda ham, xorijda ham amal qiladi. <br />
+              🎓 Biz HEMIS tizimi orqali ishlaymiz — bu Oliy ta’lim vazirligining rasmiy axborot tizimi bo‘lib, barcha institutlar aynan shu tizimga biriktirilgan. <br /> Diplomni institut emas, Oliy ta’lim vazirligi rasmiy tarzda taqdim etadi..</p>
+            </details>
+            <details className="border p-4 rounded-lg">
+              <summary className="cursor-pointer font-semibold text-black/800">❓ Ish topish imkoni bormi?</summary>
+              <p className="mt-2 text-black">✅ Bitiruvchilarimiz banklar, IT kompaniyalari va xalqaro tashkilotlarda faoliyat yuritmoqda.
+              Xususan, Samarqand viloyati Soliq qo‘mitasi bilan rasmiy shartnomamiz mavjud bo‘lib, talabalarimiz amaliyot o‘tashadi va ishga qabul qilish uchun rezerv ro‘yxatiga kiritiladi.</p>
+            </details> 
+              <details className="border p-4 rounded-lg">
+              <summary className="cursor-pointer font-semibold text-black/800">Qanday hujjatlar talab qilinadi?</summary>
+              <ul className='text-black/800'>
+              <li className="mt-2 text-black">🔸 Pasport nusxasi 3 dona</li>
+              <li className="mt-2 text-black">🔸 Diplom yoki atestat (ilovasi bilan birga) asil nusxasi</li>
+              <li className="mt-2 text-black">🔸 Institut bilan tuzilgan shartnoma</li>
+              <li className="mt-2 text-black">🔸 Konvert A4 1 dona</li>
+              <li className="mt-2 text-black">🔸 Papka (дело) 1 dona</li>
+              <li className="mt-2 text-black">🔸 3x4 rasm 6 dona</li>
+              <li className="mt-2 text-black">🔸 Til bilish sertifikati nusxasi, asli ko’rsatilgan holda (agar bo’lsa)</li>
+              <li className="mt-2 text-black">🔸 Familiya o’zgargan bo’lsa, FHDYO dan ma’lumotnoma</li>
+              </ul>
+            </details>
+            <details className="border p-4 rounded-lg">
+              <summary className="cursor-pointer font-semibold text-black/800">Grant imkoniyatlari bormi?</summary>
+              <p className="mt-2 text-black/800">Ha, IELTS va SAT sertifikati bor talabalar uchun grantlar mavjud.</p>
+            </details>
           </div>
-          <p className='text-center text-md'> <span className='text-orange-600 text-lg block'>{item.title}</span>
-{item.desc}</p>
         </div>
-        ))}
-      </div>
-    </div>
+      </section>
 
     {/* Gallery ---------------- */}
     <h1 className='text-2xl  pb-2 border-b-2 border-red-600'>Ijtimoiy faoliyat</h1>
