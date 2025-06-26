@@ -19,7 +19,7 @@ export default function Main() {
         <h1 className='text-md lg:text-2xl text-yellow-500 font-semibold'>Samarqand kampusi</h1>
         <h1 className='text-white lg:text-6xl text-4xl  md:py-4 py-2 font-bold '>ISFT Instituti</h1>
         <p className='lg:text-2xl text-md text-white md:w-[70%] w-[90%] font-semibold'>Ta'lim berish va tahsil olishda o'zgacha yondashuv. Respublika bo‘yicha yuqori natijalar!</p>
-        <h3 className='text-white lg:text-2xl text-lg  md:py-4 py-2 font-bold'>Bizda Ta'lim shakli</h3>
+        <h3 className='text-white lg:text-2xl text-lg  md:py-4 py-2 font-bold'>Bizda ta'lim shakli</h3>
         <div className="flex items-center">
         <p className='text-white text-md px-2 italic font-bold -mt-3'>🔸 Kunguzgi</p>
         <p className='text-white text-md px-2 italic font-bold -mt-3'>🔸 Kechgi</p>
