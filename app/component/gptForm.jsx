@@ -67,7 +67,7 @@ export default function FormPage() {
         setIsm('');
         setFamilya('');
         setTelefon('');
-        window.location.href = 'https://www.instagram.com/isft_samarqand/';
+        window.location.href = 'https://www.instagram.com/sotuv_mutaxassisi/';
       } else {
         console.error('Telegram API xatosi:', telegramData);
         setXato('❌ Telegramga yuborishda xatolik bo‘ldi.');
