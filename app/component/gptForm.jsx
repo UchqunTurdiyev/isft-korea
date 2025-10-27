@@ -83,8 +83,8 @@ export default function FormPage() {
 
   return (
     <div className='w-full' id='gptForms'>
-      <h1 className='text-2xl my-4 pb-2 border-b-2 border-red-600'>
-        Bepul grantlar va to‘liq ma’lumot uchun ro‘yxatdan o‘tishni unutmang.
+      <h1 className='text-2xl my-4 pb-2 border-b-2 border-red-600 px-20 text-center'>
+      Sotuv kursida alo darajada tahsil olib, so‘ngra ish bilan ta’minlanishga nima deysiz?
       </h1>
       <form
         onSubmit={handleSubmit}
