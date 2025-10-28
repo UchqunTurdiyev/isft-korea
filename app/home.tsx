@@ -6,6 +6,7 @@ import Image from 'next/image';
 import React from 'react'
 import { title } from 'process';
 import FormPage from './component/gptForm';
+import m from '../public/m.jpeg'
 
 export default function HeroPage () {
 
@@ -64,7 +65,7 @@ export default function HeroPage () {
         <div className="relative px-3 md:px-0">{/* ikki chetida joy qolsin (mobile padding) */}
           <div className="rounded-3xl shadow-soft overflow-hidden border bg-paper">
             <Image
-              src=""
+              src={m}
               alt="Sotuv kursi — hero vizual"
               width={1280}
               height={960}
@@ -80,7 +81,7 @@ export default function HeroPage () {
       </div>
     </section>
 
-    <FormPage />
+    {/* <FormPage /> */}
  
     <section id="program" className="py-16 md:py-24">
       <div className="container-x grid lg:grid-cols-2 gap-10 items-start">
@@ -102,14 +103,14 @@ export default function HeroPage () {
           <div className="mt-6 grid sm:grid-cols-2 gap-4">
             <div className="rounded-2xl border p-4">
               <div className="relative h-28 w-full rounded-xl overflow-hidden bg-gray-100">
-                <Image src="" alt="Ustoz 1" fill className="object-cover" />
+                {/* <Image src="" alt="Ustoz 1" fill className="object-cover" /> */}
               </div>
               <p className="mt-3 font-medium">Ustoz 1</p>
               <p className="text-xs text-gray-500">B2B/B2C sotuv, 12 yil</p>
             </div>
             <div className="rounded-2xl border p-4">
               <div className="relative h-28 w-full rounded-xl overflow-hidden bg-gray-100">
-                <Image src="" alt="Ustoz 2" fill className="object-cover" />
+                {/* <Image src="" alt="Ustoz 2" fill className="object-cover" /> */}
               </div>
               <p className="mt-3 font-medium">Ustoz 2</p>
               <p className="text-xs text-gray-500">Call‑center/Sales Ops, 10 yil</p>
@@ -184,18 +185,18 @@ export default function HeroPage () {
         <p className="text-center text-gray-600 mt-2">Rasmlar Pinterest/Google orqali link bilan joylandi</p>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="rounded-2xl overflow-hidden border shadow-soft px-3 md:px-0">{/* ikki cheti bo'sh */}
-            <Image src="" alt="Dars jarayoni" width={800} height={600} className="w-full h-auto object-cover" />
+            {/* <Image src="" alt="Dars jarayoni" width={800} height={600} className="w-full h-auto object-cover" /> */}
           </div>
           <div className="rounded-2xl overflow-hidden border shadow-soft px-3 md:px-0">
-            <Image src="" alt="Role‑play" width={800} height={600} className="w-full h-auto object-cover" />
+            {/* <Image src="" alt="Role‑play" width={800} height={600} className="w-full h-auto object-cover" /> */}
           </div>
           <div className="rounded-2xl overflow-hidden border shadow-soft px-3 md:px-0">
-            <Image src="" alt="Sertifikat topshirish" width={800} height={600} className="w-full h-auto object-cover" />
+            {/* <Image src="" alt="Sertifikat topshirish" width={800} height={600} className="w-full h-auto object-cover" /> */}
           </div>
         </div>
       </div>
     </section>
-    <footer className="py-10 border-t">
+    {/* <footer className="py-10 border-t">
       <div className="container-x flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm text-gray-600">© {new Date().getFullYear()} Sotuv Kursi. Barcha huquqlar himoyalangan.</p>
         <div className="flex items-center gap-4 text-sm">
@@ -204,7 +205,7 @@ export default function HeroPage () {
           <a className="hover:text-primary-700" href="#">Maxfiylik</a>
         </div>
       </div>
-    </footer>
+    </footer> */}
  
     </div>
   )
