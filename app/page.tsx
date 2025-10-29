@@ -9,8 +9,8 @@ import SotuvKursi from "./component/contact";
 export default function Page() {
   return (
     <main>
-    {/* <SotuvKursi /> */}
-    <FormPage />
+    <SotuvKursi />
+    {/* <FormPage /> */}
 
     </main>
   );

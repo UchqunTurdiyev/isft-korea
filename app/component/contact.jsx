@@ -1,55 +1,159 @@
+// app/sotuv/page.tsx
+import React from "react";
+import FormPage from "./gptForm";
+
+
+
 export default function SotuvKursi() {
-  const topics = [
-    'Kirish: Sotuv nima va uning turlari',
-    'Sotuvni nimadan boshlaymiz?',
-    'Online sotuv texnikasi',
-    'Mijozga to’g’ri savol berish, SPIN texnikasi',
-    'Etirozlar bilan ishlash texnikalari',
-    'Sifatli servis ko’rsatish',
-    'Mijoz tipografiyasi',
-    'Sotuv psixologiyasi'
-  ];
-
   return (
-    <main className="min-h-screen bg-white text-gray-900 p-8">
-      <h1 className="text-3xl font-bold mb-6 text-center text-primary-700">
-        Sotuv kursi
-      </h1>
+    <main className="min-h-screen bg-gradient-to-b from-white via-blue-50/40 to-white">
+      {/* Hero */}
+      <section className="px-6 pt-16 pb-10">
+        <div className="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 items-center">
+          <div>
+            <span className="inline-block text-xs tracking-wider uppercase text-blue-700/80 bg-blue-100 px-3 py-1 rounded-full">
+              Amaliy dastur • Mentorlik 
+            </span>
+            <h1 className="mt-4 text-3xl md:text-5xl font-bold leading-tight text-gray-900">
+               Sotuv Mutaxassisi Kursi
+            </h1>
+            <p className="mt-4 text-gray-600 md:text-lg leading-relaxed">
+              💼 Alo darajada tahsil olib, so'ngra <strong>ishga joylashish kafolati</strong>ga ega bo'ling. <strong>Bu imkoniyat aynan siz uchun!</strong>
+            </p>
 
-      <p className="text-center mb-8 max-w-2xl mx-auto text-lg">
-        Samarqand shahridagi tadbirkorlar bilan hamkorlikda, biz ular uchun
-        professional sotuv xodimlarini tayyorlaymiz. Kurs davomida siz
-        sotuvning nazariyasi va amaliyotini, mijoz bilan ishlash texnikalarini
-        va psixologiyani chuqur o‘rganasiz.
-      </p>
+            <div className="mt-6 flex flex-wrap items-center gap-3">
+              <a
+                href="tel:+998952813737"
+                className="inline-flex items-center justify-center h-11 px-6 rounded-xl bg-blue-600 text-white font-semibold shadow-sm hover:bg-blue-700 transition"
+              >
+                📞 +998 95 281 3737
+              </a>
+              <a
+                href="#royxat"
+                className="inline-flex items-center justify-center h-11 px-5 rounded-xl bg-white text-blue-700 font-semibold border border-blue-200 hover:border-blue-300 shadow-sm"
+              >
+                🚀 Hozir ro'yxatdan o'ting
+              </a>
+            </div>
 
-      <section className="max-w-3xl mx-auto space-y-3">
-        {topics.map((topic) => (
-          <div
-            key={topic}
-            className="p-4 border rounded-xl hover:shadow-sm transition"
-          >
-            <h2 className="text-lg font-semibold text-primary-700">{topic}</h2>
+            <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {[
+                { k: "Yo'nalish", v: "Sotuv" },
+                { k: "Usul", v: "SPIN + amaliyot" },
+                { k: "Format", v: "Mentorlik" },
+                { k: "Kafolat", v: "Ishga yo'naltirish" },
+              ].map((i) => (
+                <div
+                  key={i.k}
+                  className="rounded-2xl bg-white/80 backdrop-blur border border-blue-100 p-4"
+                >
+                  <div className="text-xs uppercase tracking-wide text-blue-800/70">
+                    {i.k}
+                  </div>
+                  <div className="text-lg font-semibold text-gray-900">{i.v}</div>
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
+
+          <div className="relative">
+            <div className="aspect-[4/3] rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-200/40 via-white to-blue-100/40 shadow-[0_10px_30px_rgba(30,64,175,0.15)] p-6">
+              <div className="h-full w-full grid place-items-center text-center">
+                <div>
+                  <div className="text-sm uppercase tracking-wider text-blue-700/80">
+                    Sizga beradigan qiymat
+                  </div>
+                  <div className="mt-2 text-2xl font-bold text-gray-900">
+                    Nazariya + Amaliyot + Real skriptlar
+                  </div>
+                  <p className="mt-3 text-gray-600 max-w-sm mx-auto">
+                    Tanishuvdan sotishgacha: savollar texnikasi, do'stona muloqot,
+                    e'tirozlar bilan ishlash va ta'sirchan nutq.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <div className="mt-12 text-center">
-        <p className="text-lg font-medium">
-          Kurs yakunida siz haqiqiy kompaniyalarda ish boshlash imkoniyatiga ega
-          bo‘lasiz.
-        </p>
-        <p className="mt-2 text-gray-600">
-          Bizning jamoamiz Samarqanddagi tadbirkorlar bilan rasmiy shartnomalar
-          asosida ishlaydi.
-        </p>
-        <a
-          href="tel:+998555187070"
-          className="inline-block mt-6 px-6 py-3 rounded-xl bg-primary-600 text-white hover:bg-primary-700"
-        >
-          Bog‘lanish: +998 55 518 70 70
-        </a>
-      </div>
+      {/* O'quv dasturi — foyda nuqtali ro'yxat */}
+      <section className="px-6 pb-6">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-5">
+          {[
+            // {
+            //   t: "Sotuv o'zi nima?",
+            //   d: "Sotuvning funksiyasi, qadri va jarayon bosqichlari — tuzilgan skriptlar bilan.",
+            // },
+            {
+              t: "Sotuv psixologiyasi",
+              d: "3-savol orqali mijoz turini aniqlash va unga mos yondashuv.",
+            },
+            {
+              t: "Do'stona muloqot",
+              d: "Tanishuvni to'xtatmasdan ishonch va yaqinlik hosil qilish texnikalari.",
+            },
+            {
+              t: "Umrbod mijoz tamoyili",
+              d: "Bir martalik savdodan ko'ra, umrbod mijozga aylantirish.",
+            },
+            {
+              t: "Rad javobi — boshlanish",
+              d: "Xaqiqiy savdo rad javobidan boshlanadi",
+            },
+            {
+              t: "Tana tili va nutq",
+              d: "Ovoz balandligi, pauza, tempo va body language — ishonch uyg'otish kalitlari.",
+            },
+            {
+              t: "E'tirozlar bilan ishlash",
+              d: "Eng ko'p uchraydigan e'tirozlarga tayyor javoblar va savol orqali yechim.",
+            },
+          ].map((c) => (
+            <div
+              key={c.t}
+              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
+            >
+              <div className="text-lg font-semibold text-gray-900">{c.t}</div>
+              <p className="mt-2 text-gray-600 text-sm leading-relaxed">{c.d}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Ustozlar va kafolat */}
+      <section className="px-6 py-6">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-6 items-stretch">
+          <div className="rounded-3xl bg-white border border-blue-100 p-6 shadow-[0_10px_30px_rgba(30,64,175,0.08)]">
+            <h3 className="text-xl font-bold text-gray-900">Ustozlar</h3>
+            <p className="mt-2 text-gray-700">
+              🧠 10+ yil tajribaga ega professional mutaxassislar dars beradi. Ular ko'plab kompaniyalar uchun sotuvchilarni tayyorlab kelishgan.
+            </p>
+          </div>
+          <div className="rounded-3xl bg-gradient-to-br from-emerald-50 to-white border border-emerald-100 p-6">
+            <h3 className="text-xl font-bold text-emerald-900">Kafolat</h3>
+            <p className="mt-2 text-emerald-800">
+              🚀 Kursni muvaffaqiyatli tamomlaganingizdan so'ng <strong>ishga joylashish kafolati</strong> beriladi.
+            </p>
+            <p className="mt-2 text-emerald-800">
+              💰 Shunday imkoniyat har doim ham bo'lavermaydi — hoziroq ro'yxatdan o'ting!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section id="royxat" className="md:px-6 px-2 pb-16">
+        <div className="max-w-4xl mx-auto text-center rounded-3xl border border-blue-200 bg-white p-8 shadow-sm">
+          <h4 className="text-2xl font-bold text-gray-900">Boshlashga tayyormisiz?</h4>
+          <p className="mt-2 text-gray-600">
+            Birinchi qadam — muloqot. Qo'ng'iroq qiling, barcha savollaringizga javob beramiz.
+          </p>
+          <FormPage />
+         
+          <p className="mt-3 text-xs text-gray-500">Ish vaqti: Du–Yak, 09:00–20:00</p>
+        </div>
+      </section>
     </main>
   );
 }

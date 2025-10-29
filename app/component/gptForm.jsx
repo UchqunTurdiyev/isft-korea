@@ -82,10 +82,10 @@ export default function FormPage() {
    
 
   return (
-    <div className='w-full px-8' id='gptForms'>
-      <h1 className='text-2xl my-4 pb-2  px-20 text-center'>
+    <div className='w-full md:px-8 mx-2' id='gptForms'>
+      {/* <h1 className='text-2xl my-4 pb-2  px-20 text-center'>
       Sotuv kursida alo darajada tahsil olib, so‘ngra ish bilan ta’minlanishga nima deysiz?
-      </h1>
+      </h1> */}
       <form
         onSubmit={handleSubmit}
         className='lg:w-md w-full flex gap-3 justify-center mx-auto items-center flex-col'
